@@ -1,123 +1,151 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
     <title>Products - ABC Electronics</title>
-</head>
-<body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-
-    <header class="site-header" role="banner">
-        <div class="header-inner">
-            <a href="index.html" class="logo" aria-label="ABC Electronics home">ABC Electronics</a>
-            <nav class="main-nav" aria-label="Primary navigation">
-                <ul class="nav-list">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html" aria-current="page">Products</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand" aria-label="ABC Electronics home">
+          <span class="brand-mark" aria-hidden="true">ABC</span>
+          <div class="brand-text">
+            <p class="brand-name">ABC Electronics</p>
+            <p class="brand-tagline">Smart appliances for modern living</p>
+          </div>
         </div>
+        <nav class="site-nav" aria-label="Primary">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link active" href="products.html">Products</a>
+          <a class="nav-link" href="product-details.html">Product Details</a>
+          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+        </nav>
+        <div class="header-actions">
+          <a class="btn btn-ghost" href="contact.html">Get a Quote</a>
+          <a class="btn btn-primary" href="products.html">Shop Deals</a>
+        </div>
+      </div>
     </header>
 
-    <main id="main-content" class="products-main" role="main">
-        <div class="page-container">
-            <h1>Our Products</h1>
-            <p class="products-intro">Discover our range of electronic appliances: TVs, mobiles, refrigerators, and air conditioners.</p>
-
-            <section class="products-section" aria-labelledby="products-heading">
-                <h2 id="products-heading" class="visually-hidden">Product catalog</h2>
-
-                <div class="product-grid" role="list">
-                    <article class="product-card" role="listitem">
-                        <a href="product-details.html?id=tv-1" class="product-card-link">
-                            <div class="product-card-image-wrap">
-                                <img src="https://placehold.co/400x300/1a365d/fff?text=Smart+TV" alt="55-inch Smart LED TV with 4K resolution" width="400" height="300" class="product-card-image" loading="lazy">
-                            </div>
-                            <div class="product-card-body">
-                                <h3 class="product-card-title">55" Smart LED TV</h3>
-                                <p class="product-card-desc">4K Ultra HD, built-in streaming apps, voice remote.</p>
-                                <span class="product-card-price">$499.99</span>
-                            </div>
-                        </a>
-                    </article>
-
-                    <article class="product-card" role="listitem">
-                        <a href="product-details.html?id=mobile-1" class="product-card-link">
-                            <div class="product-card-image-wrap">
-                                <img src="https://placehold.co/400x300/2c5282/fff?text=Smartphone" alt="Latest smartphone with 128GB storage" width="400" height="300" class="product-card-image" loading="lazy">
-                            </div>
-                            <div class="product-card-body">
-                                <h3 class="product-card-title">Pro Smartphone</h3>
-                                <p class="product-card-desc">6.5" display, 128GB storage, triple camera system.</p>
-                                <span class="product-card-price">$699.99</span>
-                            </div>
-                        </a>
-                    </article>
-
-                    <article class="product-card" role="listitem">
-                        <a href="product-details.html?id=fridge-1" class="product-card-link">
-                            <div class="product-card-image-wrap">
-                                <img src="https://placehold.co/400x300/2d3748/fff?text=Refrigerator" alt="Double door refrigerator with frost-free technology" width="400" height="300" class="product-card-image" loading="lazy">
-                            </div>
-                            <div class="product-card-body">
-                                <h3 class="product-card-title">Frost-Free Refrigerator</h3>
-                                <p class="product-card-desc">Double door, 600L capacity, energy efficient.</p>
-                                <span class="product-card-price">$899.99</span>
-                            </div>
-                        </a>
-                    </article>
-
-                    <article class="product-card" role="listitem">
-                        <a href="product-details.html?id=ac-1" class="product-card-link">
-                            <div class="product-card-image-wrap">
-                                <img src="https://placehold.co/400x300/234e52/fff?text=Air+Conditioner" alt="Split AC with inverter technology" width="400" height="300" class="product-card-image" loading="lazy">
-                            </div>
-                            <div class="product-card-body">
-                                <h3 class="product-card-title">Inverter Split AC</h3>
-                                <p class="product-card-desc">1.5 ton, 5-star rating, Wi-Fi enabled.</p>
-                                <span class="product-card-price">$549.99</span>
-                            </div>
-                        </a>
-                    </article>
-
-                    <article class="product-card" role="listitem">
-                        <a href="product-details.html?id=tv-2" class="product-card-link">
-                            <div class="product-card-image-wrap">
-                                <img src="https://placehold.co/400x300/1a365d/fff?text=OLED+TV" alt="65-inch OLED TV with HDR" width="400" height="300" class="product-card-image" loading="lazy">
-                            </div>
-                            <div class="product-card-body">
-                                <h3 class="product-card-title">65" OLED TV</h3>
-                                <p class="product-card-desc">4K HDR, Dolby Vision, ultra-thin design.</p>
-                                <span class="product-card-price">$1,299.99</span>
-                            </div>
-                        </a>
-                    </article>
-
-                    <article class="product-card" role="listitem">
-                        <a href="product-details.html?id=mobile-2" class="product-card-link">
-                            <div class="product-card-image-wrap">
-                                <img src="https://placehold.co/400x300/2c5282/fff?text=Budget+Phone" alt="Affordable smartphone with long battery life" width="400" height="300" class="product-card-image" loading="lazy">
-                            </div>
-                            <div class="product-card-body">
-                                <h3 class="product-card-title">Budget Smartphone</h3>
-                                <p class="product-card-desc">6.2" display, 64GB, 5000mAh battery.</p>
-                                <span class="product-card-price">$249.99</span>
-                            </div>
-                        </a>
-                    </article>
-                </div>
-            </section>
+    <main id="main">
+      <section class="section" aria-labelledby="products-title">
+        <div class="container">
+          <div class="section-heading">
+            <h1 id="products-title">Our Products</h1>
+            <p class="muted">
+              Discover our range of electronic appliances: TVs, mobiles, refrigerators, and air conditioners.
+            </p>
+          </div>
+          <div class="grid-cards">
+            <article class="info-card">
+              <img
+                src="https://placehold.co/400x300/12202b/fff?text=Smart+TV"
+                alt="55-inch Smart LED TV with 4K resolution"
+                width="400"
+                height="300"
+                loading="lazy"
+              />
+              <h3>55" Smart LED TV</h3>
+              <p>4K Ultra HD, built-in streaming apps, voice remote.</p>
+              <span class="bundle-price">$499.99</span>
+              <a class="text-link" href="product-details.html?id=tv-1">View details</a>
+            </article>
+            <article class="info-card">
+              <img
+                src="https://placehold.co/400x300/2a9d8f/fff?text=Smartphone"
+                alt="Latest smartphone with 128GB storage"
+                width="400"
+                height="300"
+                loading="lazy"
+              />
+              <h3>Pro Smartphone</h3>
+              <p>6.5" display, 128GB storage, triple camera system.</p>
+              <span class="bundle-price">$699.99</span>
+              <a class="text-link" href="product-details.html?id=mobile-1">View details</a>
+            </article>
+            <article class="info-card">
+              <img
+                src="https://placehold.co/400x300/5c5c5c/fff?text=Refrigerator"
+                alt="Double door refrigerator with frost-free technology"
+                width="400"
+                height="300"
+                loading="lazy"
+              />
+              <h3>Frost-Free Refrigerator</h3>
+              <p>Double door, 600L capacity, energy efficient.</p>
+              <span class="bundle-price">$899.99</span>
+              <a class="text-link" href="product-details.html?id=fridge-1">View details</a>
+            </article>
+            <article class="info-card">
+              <img
+                src="https://placehold.co/400x300/e76f51/fff?text=Air+Conditioner"
+                alt="Split AC with inverter technology"
+                width="400"
+                height="300"
+                loading="lazy"
+              />
+              <h3>Inverter Split AC</h3>
+              <p>1.5 ton, 5-star rating, Wi-Fi enabled.</p>
+              <span class="bundle-price">$549.99</span>
+              <a class="text-link" href="product-details.html?id=ac-1">View details</a>
+            </article>
+            <article class="info-card">
+              <img
+                src="https://placehold.co/400x300/12202b/fff?text=OLED+TV"
+                alt="65-inch OLED TV with HDR"
+                width="400"
+                height="300"
+                loading="lazy"
+              />
+              <h3>65" OLED TV</h3>
+              <p>4K HDR, Dolby Vision, ultra-thin design.</p>
+              <span class="bundle-price">$1,299.99</span>
+              <a class="text-link" href="product-details.html?id=tv-2">View details</a>
+            </article>
+            <article class="info-card">
+              <img
+                src="https://placehold.co/400x300/2a9d8f/fff?text=Budget+Phone"
+                alt="Affordable smartphone with long battery life"
+                width="400"
+                height="300"
+                loading="lazy"
+              />
+              <h3>Budget Smartphone</h3>
+              <p>6.2" display, 64GB, 5000mAh battery.</p>
+              <span class="bundle-price">$249.99</span>
+              <a class="text-link" href="product-details.html?id=mobile-2">View details</a>
+            </article>
+          </div>
         </div>
+      </section>
     </main>
 
-    <footer class="site-footer" role="contentinfo">
-        <div class="page-container">
-            <p class="footer-copy">&copy; 2025 ABC Electronics. All rights reserved.</p>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <p class="brand-name">ABC Electronics</p>
+          <p class="muted">
+            Your partner for reliable appliances, smart home upgrades, and fast service.
+          </p>
         </div>
+        <div>
+          <h2 class="footer-title">Contact</h2>
+          <p>Phone: (312) 555-0184</p>
+          <p>Email: hello@abcelectronics.com</p>
+        </div>
+        <div>
+          <h2 class="footer-title">Showroom</h2>
+          <p>2100 Lakeshore Ave</p>
+          <p>Chicago, IL 60601</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 ABC Electronics. All rights reserved.</p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
