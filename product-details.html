@@ -1,86 +1,108 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
     <title>55" Smart LED TV - ABC Electronics</title>
-</head>
-<body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-
-    <header class="site-header" role="banner">
-        <div class="header-inner">
-            <a href="index.html" class="logo" aria-label="ABC Electronics home">ABC Electronics</a>
-            <nav class="main-nav" aria-label="Primary navigation">
-                <ul class="nav-list">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand" aria-label="ABC Electronics home">
+          <span class="brand-mark" aria-hidden="true">ABC</span>
+          <div class="brand-text">
+            <p class="brand-name">ABC Electronics</p>
+            <p class="brand-tagline">Smart appliances for modern living</p>
+          </div>
         </div>
+        <nav class="site-nav" aria-label="Primary">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="products.html">Products</a>
+          <a class="nav-link active" href="product-details.html">Product Details</a>
+          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+        </nav>
+        <div class="header-actions">
+          <a class="btn btn-ghost" href="contact.html">Get a Quote</a>
+          <a class="btn btn-primary" href="products.html">Shop Deals</a>
+        </div>
+      </div>
     </header>
 
-    <main id="main-content" class="product-detail-main" role="main">
-        <div class="page-container">
-            <nav class="breadcrumb" aria-label="Breadcrumb">
-                <ol class="breadcrumb-list">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li aria-current="page">55" Smart LED TV</li>
-                </ol>
-            </nav>
+    <main id="main">
+      <section class="section" aria-labelledby="product-title">
+        <div class="container">
+          <p class="muted">
+            <a href="index.html">Home</a> › <a href="products.html">Products</a> › 55" Smart LED TV
+          </p>
 
-            <article class="product-detail" itemscope itemtype="https://schema.org/Product">
-                <div class="product-detail-layout">
-                    <div class="product-detail-media">
-                        <img src="https://placehold.co/600x450/1a365d/fff?text=Smart+TV" alt="55-inch Smart LED TV showing 4K content" width="600" height="450" class="product-detail-image" itemprop="image">
-                    </div>
+          <article class="split" itemscope itemtype="https://schema.org/Product">
+            <div class="service-card">
+              <img
+                src="https://placehold.co/600x450/12202b/fff?text=Smart+TV"
+                alt="55-inch Smart LED TV showing 4K content"
+                width="600"
+                height="450"
+                itemprop="image"
+              />
+            </div>
+            <div>
+              <div class="section-heading">
+                <h1 id="product-title" itemprop="name">55" Smart LED TV</h1>
+                <p class="bundle-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                  <span itemprop="price" content="499.99">$499.99</span>
+                </p>
+              </div>
+              <p class="lead muted">4K Ultra HD with built-in streaming and voice remote.</p>
 
-                    <div class="product-detail-info">
-                        <h1 class="product-detail-title" itemprop="name">55" Smart LED TV</h1>
-                        <p class="product-detail-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-                            <span itemprop="price" content="499.99">$499.99</span>
-                        </p>
-                        <p class="product-detail-tagline">4K Ultra HD with built-in streaming and voice remote.</p>
+              <h2>Specifications</h2>
+              <ul class="feature-list">
+                <li><strong>Screen size:</strong> 55 inches</li>
+                <li><strong>Resolution:</strong> 4K Ultra HD (3840 × 2160)</li>
+                <li><strong>Smart features:</strong> Built-in streaming apps, voice remote</li>
+                <li><strong>Connectivity:</strong> HDMI × 3, USB × 2, Wi-Fi, Bluetooth</li>
+                <li><strong>Warranty:</strong> 1 year manufacturer warranty</li>
+              </ul>
 
-                        <section class="product-detail-specs" aria-labelledby="specs-heading">
-                            <h2 id="specs-heading">Specifications</h2>
-                            <dl class="spec-list">
-                                <dt>Screen size</dt>
-                                <dd>55 inches</dd>
-                                <dt>Resolution</dt>
-                                <dd>4K Ultra HD (3840 × 2160)</dd>
-                                <dt>Smart features</dt>
-                                <dd>Built-in streaming apps, voice remote</dd>
-                                <dt>Connectivity</dt>
-                                <dd>HDMI × 3, USB × 2, Wi-Fi, Bluetooth</dd>
-                                <dt>Warranty</dt>
-                                <dd>1 year manufacturer warranty</dd>
-                            </dl>
-                        </section>
+              <h2>Description</h2>
+              <p itemprop="description">
+                Our 55" Smart LED TV delivers stunning 4K picture quality and access to your favorite streaming services. The voice remote lets you search and control the TV hands-free. Perfect for living rooms and family entertainment.
+              </p>
 
-                        <section class="product-detail-description" aria-labelledby="description-heading">
-                            <h2 id="description-heading">Description</h2>
-                            <p itemprop="description">Our 55" Smart LED TV delivers stunning 4K picture quality and access to your favorite streaming services. The voice remote lets you search and control the TV hands-free. Perfect for living rooms and family entertainment.</p>
-                        </section>
-
-                        <div class="product-detail-actions">
-                            <a href="contact.html" class="btn btn-primary">Contact us to purchase</a>
-                            <a href="products.html" class="btn btn-secondary">Back to products</a>
-                        </div>
-                    </div>
-                </div>
-            </article>
+              <div class="hero-actions">
+                <a class="btn btn-primary" href="contact.html">Contact us to purchase</a>
+                <a class="btn btn-outline" href="products.html">Back to products</a>
+              </div>
+            </div>
+          </article>
         </div>
+      </section>
     </main>
 
-    <footer class="site-footer" role="contentinfo">
-        <div class="page-container">
-            <p class="footer-copy">&copy; 2025 ABC Electronics. All rights reserved.</p>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <p class="brand-name">ABC Electronics</p>
+          <p class="muted">
+            Your partner for reliable appliances, smart home upgrades, and fast service.
+          </p>
         </div>
+        <div>
+          <h2 class="footer-title">Contact</h2>
+          <p>Phone: (312) 555-0184</p>
+          <p>Email: hello@abcelectronics.com</p>
+        </div>
+        <div>
+          <h2 class="footer-title">Showroom</h2>
+          <p>2100 Lakeshore Ave</p>
+          <p>Chicago, IL 60601</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 ABC Electronics. All rights reserved.</p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
