@@ -109,3 +109,24 @@
 
 // This will work because it uses the value of the variable key, which is "name", to access the property student["name"].
 // console.log(`Student name using variable key: ${student[key]}`);
+
+const todoListContainer = document.getElementById("todo-list");
+
+const listTodos = async () => {
+  if (!todoListContainer) return;
+
+  try {
+    const response = await fetch("https://jsonplaceholder.typicode.com/todos");
+    const todos = await response.json();
+
+    todos.forEach((todo) => {
+      const todoItem = document.createElement("div");
+      todoItem.textContent = `${todo.id}. ${todo.title} - Completed: ${todo.completed}`;
+      todoListContainer.appendChild(todoItem);
+    });
+  } catch (error) {
+    console.error("Error fetching todos:", error);
+  }
+};
+
+listTodos();
