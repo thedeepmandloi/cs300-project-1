@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Task Manager</title>
+    <link
+      rel="stylesheet"
+      href="styles/tasks-m.css"
+    />
+    <script
+      src="scripts/tasks-m.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <h1>Task Manager</h1>
+
+    <div class="add-form">
+      <input
+        type="text"
+        id="task-input"
+        placeholder="What needs to be done?"
+      />
+      <select id="priority-select">
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+      </select>
+      <button id="add-btn">Add</button>
+    </div>
+
+    <div id="task-list"></div>
+    <p
+      class="task-count"
+      id="task-count"
+    ></p>
+  </body>
+</html>

@@ -110,23 +110,62 @@
 // This will work because it uses the value of the variable key, which is "name", to access the property student["name"].
 // console.log(`Student name using variable key: ${student[key]}`);
 
-const todoListContainer = document.getElementById("todo-list");
+// const todoListContainer = document.getElementById("todo-list");
+// const listTodos = async () => {
+//   if (!todoListContainer) return;
 
-const listTodos = async () => {
-  if (!todoListContainer) return;
+//   try {
+//     const response = await fetch("https://jsonplaceholder.typicode.com/todos");
+//     const todos = await response.json();
 
-  try {
-    const response = await fetch("https://jsonplaceholder.typicode.com/todos");
-    const todos = await response.json();
+//     todos.forEach((todo) => {
+//       const todoItem = document.createElement("div");
+//       todoItem.textContent = `${todo.id}. ${todo.title} - Completed: ${todo.completed}`;
+//       todoListContainer.appendChild(todoItem);
+//     });
+//     todoCount.textContent = `Total todos: ${todos.length}`;
+//   } catch (error) {
+//     console.error("Error fetching todos:", error);
+//   }
+// };
 
-    todos.forEach((todo) => {
-      const todoItem = document.createElement("div");
-      todoItem.textContent = `${todo.id}. ${todo.title} - Completed: ${todo.completed}`;
-      todoListContainer.appendChild(todoItem);
-    });
-  } catch (error) {
-    console.error("Error fetching todos:", error);
-  }
-};
+// listTodos();
 
-listTodos();
+// const darkModeButton = document.getElementById("dark-mode");
+
+// const lightModeButton = document.getElementById("light-mode");
+
+// const handleToggleMode = () => {
+//   document.body.classList.add("dark-mode");
+//   document.body.classList.remove("light-mode");
+//   lightModeButton.remove();
+// };
+
+// darkModeButton.addEventListener("click", handleToggleMode);
+
+// const todoDiv = document.querySelectorAll("h1");
+
+// const todoDivSingle = document.querySelector("div");
+
+// todoDivSingle.innerHTML = "<h2> All todo lists:</h2>";
+
+// if (todoDiv && todoDiv.length > 0) {
+//   todoDiv.forEach((h1) => {
+//     h1.textContent = "<h2> All todo lists:</h2>";
+//   });
+// } else {
+//   console.error("Element with tag 'h1' not found.");
+// }
+
+const firstDiv = document.querySelector("div#count");
+
+const form = document.querySelector("form");
+const input = document.querySelector("#todo-input");
+
+input.addEventListener("input", (event) => {
+  console.log(`New todo: ${event.target.value}`);
+});
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+});

@@ -34,47 +34,63 @@
             <p class="brand-tagline">Smart appliances for modern living</p>
           </div>
         </div>
-        <nav
-          class="site-nav"
-          aria-label="Primary"
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-menu"
+          aria-label="Open navigation menu"
         >
-          <a
-            class="nav-link"
-            href="index.html"
-            >Home</a
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+        </button>
+        <div
+          class="nav-panel"
+          id="primary-menu"
+        >
+          <nav
+            class="site-nav"
+            aria-label="Primary"
           >
-          <a
-            class="nav-link"
-            href="products.html"
-            >Products</a
-          >
-          <a
-            class="nav-link"
-            href="product-details.html"
-            >Product Details</a
-          >
-          <a
-            class="nav-link"
-            href="about.html"
-            >About</a
-          >
-          <a
-            class="nav-link active"
-            href="contact.html"
-            >Contact</a
-          >
-        </nav>
-        <div class="header-actions">
-          <a
-            class="btn btn-ghost"
-            href="contact.html"
-            >Get a Quote</a
-          >
-          <a
-            class="btn btn-primary"
-            href="products.html"
-            >Shop Deals</a
-          >
+            <a
+              class="nav-link"
+              href="index.html"
+              >Home</a
+            >
+            <a
+              class="nav-link"
+              href="products.html"
+              >Products</a
+            >
+            <a
+              class="nav-link"
+              href="product-details.html"
+              >Product Details</a
+            >
+            <a
+              class="nav-link"
+              href="about.html"
+              >About</a
+            >
+            <a
+              class="nav-link active"
+              href="contact.html"
+              >Contact</a
+            >
+          </nav>
+          <div class="header-actions">
+            <a
+              class="btn btn-ghost"
+              href="contact.html"
+              >Get a Quote</a
+            >
+            <a
+              class="btn btn-primary"
+              href="products.html"
+              >Shop Deals</a
+            >
+          </div>
         </div>
       </div>
     </header>
@@ -313,5 +329,7 @@
         <p>&copy; 2026 ABC Electronics. All rights reserved.</p>
       </div>
     </footer>
+
+    <script src="scripts/nav.js"></script>
   </body>
 </html>
