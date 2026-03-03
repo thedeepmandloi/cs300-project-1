@@ -157,15 +157,44 @@
 //   console.error("Element with tag 'h1' not found.");
 // }
 
-const firstDiv = document.querySelector("div#count");
+// const firstDiv = document.querySelector("div#count");
 
-const form = document.querySelector("form");
-const input = document.querySelector("#todo-input");
+// const form = document.querySelector("form");
+// const input = document.querySelector("#todo-input");
 
-input.addEventListener("input", (event) => {
-  console.log(`New todo: ${event.target.value}`);
+// input.addEventListener("input", (event) => {
+//   console.log(`New todo: ${event.target.value}`);
+// });
+
+// form.addEventListener("submit", (event) => {
+//   event.preventDefault();
+// });
+
+const h2 = document.querySelector("h2");
+// const h3 = document.querySelector("h3");
+
+// console.log(`Selected h2 element: ${h2.textContent}`);
+// console.log(`Selected h3 element: ${h3.textContent}`);
+
+// h2.textContent = "<span style='color: blue;'>Updated H2 Text with HTML</span>";
+
+// h3.innerHTML = "<span style='color: blue;'>Updated H3 Text with HTML</span>";
+
+const changeModeButton = document.querySelector("#change-mode");
+
+changeModeButton.addEventListener("click", () => {
+  // Using add and remove
+  if (document.body.classList.contains("dark-mode")) {
+    document.body.classList.remove("dark-mode");
+    document.body.classList.add("light-mode");
+  } else {
+    document.body.classList.remove("light-mode");
+    document.body.classList.add("dark-mode");
+  }
+
+  // Using toggle
+  // document.body.classList.toggle("dark-mode");
+  // document.body.classList.toggle("light-mode");
 });
 
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
-});
+h2.style.color = "red";
